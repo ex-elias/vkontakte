@@ -2,6 +2,7 @@ package com.vk.steps;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.vk.pages.MessengerPage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 
@@ -19,6 +20,6 @@ public class AssertStep extends AbstractStep {
     @Step("Assert attached audio")
     public void assertAttachedAudio() {
         assertThat(messengerPage.getAttachedAudioTitle()).as("Attached audio title is incorrect")
-                .isEqualTo(messengerPage.getExpectedAudioTitle());
+                .isEqualTo(MessengerPage.getExpectedAudioTitle());
     }
 }
