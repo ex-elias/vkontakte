@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Messenger tests suite">
+
+    <listeners>
+        <listener class-name="com.vk.listeners.ScreenshotListener"/>
+    </listeners>
+
+    <test name="Messenger tests">
+        <classes>
+            <class name="com.vk.tests.MessengerTest"/>
+        </classes>
+    </test>
+
+</suite>
